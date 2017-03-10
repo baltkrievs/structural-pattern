@@ -1,4 +1,4 @@
-package by.darashchonak.mentoring.pattern.structural;
+package by.darashchonak.mentoring.pattern.structural.business;
 
 import java.util.Objects;
 
