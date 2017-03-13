@@ -2,8 +2,8 @@ package by.darashchonak.mentoring.pattern.structural.factory;
 
 import by.darashchonak.mentoring.pattern.structural.proxy.Source;
 
-public abstract class SourceFactory {
+public interface SourceFactory {
 
-    public abstract Source getSource();
+    public Source getSource();
 
 }
