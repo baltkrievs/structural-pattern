@@ -28,6 +28,9 @@ public class SourceCacheProxy implements Source {
                 source = factory.getSource();
             }
             phonesList = source.lookUp(name);
+
+        } else {
+            System.out.println("From cache");
         }
 
         return phonesList;

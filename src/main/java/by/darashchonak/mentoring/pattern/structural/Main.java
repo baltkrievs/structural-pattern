@@ -9,11 +9,12 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Source fileClinet = new SourceCacheProxy(new FileSourceFactory());
-        fileClinet.lookUp("John Doe");
+        Source fileClient = new SourceCacheProxy(new FileSourceFactory());
+        fileClient.lookUp("Jane Doe");
+        fileClient.lookUp("Jane Doe");
 
-        Source dbClinet = new SourceCacheProxy(new DataBaseSourceFactory());
-        dbClinet.lookUp("Jane Doe");
+        Source dbClient = new SourceCacheProxy(new DataBaseSourceFactory());
+        dbClient.lookUp("John Doe");
 
     }
 
