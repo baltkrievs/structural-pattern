@@ -4,6 +4,9 @@ import java.util.Objects;
 
 public class Phone implements Cloneable {
 
+    private long number;
+    private PhoneType type;
+
     public Phone(long number, PhoneType type) {
         this.number = number;
         this.type = type;
@@ -12,9 +15,6 @@ public class Phone implements Cloneable {
     public Phone(long number) {
         this(number, PhoneType.GENERAL);
     }
-
-    private long number;
-    private PhoneType type;
 
     public long getNumber() {
         return number;
